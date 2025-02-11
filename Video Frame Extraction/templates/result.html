@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extracted Frames</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Extracted Frames</h1>
+    <div>
+        {% for frame in frames %}
+            <img src="{{ url_for('static', filename=frame) }}" alt="Frame">
+        {% endfor %}
+    </div>
+</body>
+</html>
